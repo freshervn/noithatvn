@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Trang chủ</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="image/u126.png" type="image/x-icon?" />
+	<!-- boottrap 4-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- my css -->
+	<link rel="stylesheet" type="text/css" href="css/lib.css">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: var(--font-primary);
+			font-size: 12px;
+		}
+		header {
+			background: var(--black-mouseOver);
+			padding-bottom: 0;
+		}
+		header .contact {
+			color: white;
+		}
+		header .contact td{
+			width: 300px;
+		}
+		header .logo_search{
+			background: whitesmoke;
+			margin-top: 0.5em;
+		}
+		header .logo_search div{
+			display: flex;}
+			header .logo_search a img{
+				height: 80px;
+			}
+			header .logo_search form input[type="search"]{
+				width: 20em;
+			}
+			header .logo_search form button[type="submit"]{
+				background: var(--orange-primary);
+				border:none;
+				outline: none;
+				color: var(--orange-primary);
+			}
+			header .logo_search form button[type="submit"]:hover{
+				background: var(--orange-mouse-over);
+			}
+			header .logo_search form button[type="submit"]:active{
+				background: var(--blue-primary) !important;
+				box-shadow: 2px 2px 2px 2px var(--blue-disabled),-2px 2px 2px 2px var(--blue-disabled),2px -2px 2px 2px var(--blue-disabled),-2px -2px 2px 2px var(--blue-disabled) !important;
+			}
+			header .logo_search form button[type="submit"]:focus{
+				background: var(--orange-primary);
+				outline: none;
+				border: none;
+				box-shadow: 2px 2px 2px 2px var(--orange-mouse-over),-2px 2px 2px 2px var(--orange-mouse-over),2px -2px 2px 2px var(--orange-mouse-over),-2px -2px 2px 2px var(--orange-mouse-over);
+			}
+			header nav {
+				background-color:var(--lightblue-primary);
+				margin-bottom: 0;				
+				font-size: 18px;
+				font-weight: 300;			
+				padding: 0px;
+			}
+			header nav .content{
+				position: relative;
+				left: 50%;
+				width: fit-content;
+				transform: translate(-50%);
+				padding: 5px;
+			}
+			header nav .content a{
+				text-transform: uppercase;				
+				color: white;
+				padding: 0 25px;
+				margin: 0;
+			}
+			header nav .content div{
+			}
+		</style>
+	</head>
+	<body>
+		<header class="pt-1">
+			<div class="contact container">			
+				<table class="		d-none d-sm-block">
+					<tr>
+						<td><img src="image/icons/phone_ring.png"> 0283 813 0590 - 0283 813 0591</td>
+						<td><img src="image/icons/reversible_time.png"> 8h00 - 18h00</td>
+					</tr>
+				</table>
+			</div>	
+
+			<div class="logo_search">	
+				<div class="container">
+					<a href="#"><img src="image/u126.png"></a>
+				</button>
+				<form class="form-inline my-2 my-lg-0 ml-auto">
+					<input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="image/icons/search.png"></button>
+				</form>
+			</div>
+		</div>
+
+		<nav>
+			<div class="content">
+				<a href="">Trang chủ</a>
+				<div></div>
+				<a href="">giới thiệu</a>
+					<div></div>
+				<a href="">sản phẩm</a>
+					<div></div>
+				<a href="">tư vấn</a>
+					<div></div>
+				<a href="">liên hệ</a>
+			</div>
+		</nav>
+
+	</header>
+
+</body>
+</html>

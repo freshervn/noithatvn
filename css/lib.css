@@ -1,0 +1,27 @@
+/*format dau tien*/
+:root{
+  /*button blue*/
+  --blue-primary: #0b73b7;
+  --blue-mouse-over:#0770b7;
+  --blue-mouse-down:#3276b1;
+  --blue-disabled:#428bca;
+  /*button orange*/
+  --orange-primary: #f58020;
+  --orange-mouse-over:#fbb045;
+  /*btn red*/
+  --red-primary:#d2223d;
+  --red-mose-over:#d8534f;
+  --red-disabled:#d9534f;
+  /*back*/
+  --black-mouseOver:#333333;
+  /*btn dark blue*/
+  --darkblue-primary:#141340;
+  /*light blue*/
+  --lightblue-primary:#00b0de;
+  /*line orange*/
+  --line-orange:#f58020;
+  /*line gray*/
+  --line-gray:#cccccc;
+  /*font*/
+  --font-primary:'Roboto';
+}
