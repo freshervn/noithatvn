@@ -1,27 +1,103 @@
 /*format dau tien*/
 :root{
-  /*button blue*/
-  --blue-primary: #0b73b7;
-  --blue-mouse-over:#0770b7;
-  --blue-mouse-down:#3276b1;
-  --blue-disabled:#428bca;
-  /*button orange*/
-  --orange-primary: #f58020;
-  --orange-mouse-over:#fbb045;
-  /*btn red*/
-  --red-primary:#d2223d;
-  --red-mose-over:#d8534f;
-  --red-disabled:#d9534f;
-  /*back*/
-  --black-mouseOver:#333333;
-  /*btn dark blue*/
-  --darkblue-primary:#141340;
-  /*light blue*/
-  --lightblue-primary:#00b0de;
-  /*line orange*/
-  --line-orange:#f58020;
-  /*line gray*/
-  --line-gray:#cccccc;
-  /*font*/
-  --font-primary:'Roboto';
+	/*button blue*/
+	--blue-primary: #0b73b7;
+	--blue-mouse-over:#0770b7;
+	--blue-mouse-down:#3276b1;
+	--blue-disabled:#428bca;
+	/*button orange*/
+	--orange-primary: #f58020;
+	--orange-mouse-over:#fbb045;
+	/*btn red*/
+	--red-primary:#d2223d;
+	--red-mose-over:#d8534f;
+	--red-disabled:#d9534f;
+	/*back*/
+	--black-mouseOver:#333333;
+	/*btn dark blue*/
+	--darkblue-primary:#141340;
+	/*light blue*/
+	--lightblue-primary:#00b0de;
+	/*line orange*/
+	--line-orange:#f58020;
+	/*line gray*/
+	--line-gray:#cccccc;
+	/*font*/
+	--font-primary:'Roboto';
+}
+*{
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-primary);
+	font-size: 12px;
+}
+header {
+	background: var(--black-mouseOver);
+	padding-bottom: 0;
+}
+header .contact{
+	background-color: 
+}
+header .contact td{
+	width: 300px;
+}
+header .contact {
+	color: white;
+}
+header .logo_search{
+	background: whitesmoke;
+	margin-top: 0.5em;
+}
+header .logo_search div{
+	display: flex;
+}
+header .logo_search a img{
+	height: 80px;
+}
+header .logo_search form input[type="search"]{
+	width: 20em;
+}
+header .logo_search form button[type="submit"]{
+	background: var(--orange-primary);
+	border:none;
+	outline: none;
+	color: var(--orange-primary);
+}
+header .logo_search form button[type="submit"]:hover{
+	background: var(--orange-mouse-over);
+}
+header .logo_search form button[type="submit"]:active{
+	background: var(--blue-primary) !important;
+	box-shadow: 2px 2px 2px 2px var(--blue-disabled),-2px 2px 2px 2px var(--blue-disabled),2px -2px 2px 2px var(--blue-disabled),-2px -2px 2px 2px var(--blue-disabled) !important;
+}
+header .logo_search form button[type="submit"]:focus{
+	background: var(--orange-primary);
+	outline: none;
+	border: none;
+	box-shadow: 2px 2px 2px 2px var(--orange-mouse-over),-2px 2px 2px 2px var(--orange-mouse-over),2px -2px 2px 2px var(--orange-mouse-over),-2px -2px 2px 2px var(--orange-mouse-over);
+}
+header nav {
+	background-color:var(--lightblue-primary);
+	margin-bottom: 0;				
+	font-size: 18px;
+	font-weight: 300;			
+	padding: 0px;
+}
+header nav .content{
+	position: relative;
+	left: 50%;
+	width: fit-content;
+	transform: translate(-50%);
+	padding: 5px;
+}
+header nav .content a{
+	text-transform: uppercase;				
+	color: white;
+	padding: 0 25px;
+	margin: 0;
+}
+header nav .content div{
 }
