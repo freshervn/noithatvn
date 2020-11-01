@@ -15,44 +15,72 @@
 
 	<!-- my css -->
 	<link rel="stylesheet" type="text/css" href="css/lib.css">
-	</head>
-	<body>
-		<header class="pt-1 header">
-			<div class="contact container">			
-				<table class="		d-none d-sm-block">
+</head>
+<body>
+	<header>
+		<div class="contact py-2 ">			
+			<div class="container">
+				<table class="d-none d-sm-block">
 					<tr>
 						<td><img src="image/icons/phone_ring.png"> 0283 813 0590 - 0283 813 0591</td>
 						<td><img src="image/icons/reversible_time.png"> 8h00 - 18h00</td>
 					</tr>
 				</table>
-			</div>	
-
-			<div class="logo_search">	
-				<div class="container">
-					<a href="#"><img src="image/u126.png"></a>
-				</button>
-				<form class="form-inline my-2 my-lg-0 ml-auto">
-					<input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="image/icons/search.png"></button>
-				</form>
+				<div class="d-sm-none flag">					
+					<img src="image/icons/vn.jpg">
+					<img src="image/icons/usa.jpg">
+				</div>
 			</div>
+		</div>				
+
+		<div class="logo_search d-none d-lg-block">	
+			<div class="container">
+				<a href="#"><img src="image/u126.png"></a>
+			</button>
+			<form class="form-inline my-2 my-lg-0 ml-auto">
+				<input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="image/icons/search.png"></button>
+			</form>
 		</div>
+	</div>
+</header>
 
-		<nav>
-			<div class="content">
-				<a href="">Trang chủ</a>
-				<div></div>
-				<a href="">giới thiệu</a>
-				<div></div>
-				<a href="">sản phẩm</a>
-				<div></div>
-				<a href="">tư vấn</a>
-				<div></div>
-				<a href="">liên hệ</a>
-			</div>
-		</nav>
-
-	</header>
-
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand  d-lg-none  " href="#"><img src="image/u126.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Trang chủ<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">giới thiệu</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          sản phẩm
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">tư vấn</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">liên hệ</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 </body>
 </html>

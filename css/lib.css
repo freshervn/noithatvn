@@ -35,21 +35,28 @@ body {
 	font-size: 12px;
 }
 header {
-	background: var(--black-mouseOver);
 	padding-bottom: 0;
 }
 header .contact{
-	background-color: 
+	background: var(--black-mouseOver);
+	margin: 0;
+	padding: 0;
 }
 header .contact td{
 	width: 300px;
-}
-header .contact {
 	color: white;
+}
+header .contact .flag {
+	text-align: right;
+}
+header .contact .flag img{
+	width: 40px;
+	height: 25px;
+	margin-left: 1em;
 }
 header .logo_search{
 	background: whitesmoke;
-	margin-top: 0.5em;
+	padding-top: 0.5em;
 }
 header .logo_search div{
 	display: flex;
@@ -79,25 +86,21 @@ header .logo_search form button[type="submit"]:focus{
 	border: none;
 	box-shadow: 2px 2px 2px 2px var(--orange-mouse-over),-2px 2px 2px 2px var(--orange-mouse-over),2px -2px 2px 2px var(--orange-mouse-over),-2px -2px 2px 2px var(--orange-mouse-over);
 }
-header nav {
+nav {
 	background-color:var(--lightblue-primary);
 	margin-bottom: 0;				
 	font-size: 18px;
 	font-weight: 300;			
 	padding: 0px;
 }
-header nav .content{
-	position: relative;
-	left: 50%;
-	width: fit-content;
-	transform: translate(-50%);
-	padding: 5px;
+@media only screen and (max-width: 922px){
+	nav{
+		background-color: whitesmoke;
+	}
 }
-header nav .content a{
+nav.navbar-expand-lg.navbar-light a.nav-link{
 	text-transform: uppercase;				
 	color: white;
 	padding: 0 25px;
 	margin: 0;
-}
-header nav .content div{
 }

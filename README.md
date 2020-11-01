@@ -11,3 +11,6 @@ có vài cái icon không sử dụng ?
 
 thử thách xây ưeb trong 1 tuần :)).
 đương nhiên là có sai code cũ rồi.
+
+thanh header co so dt, co lai thì biến mất. oke
+lá cờ khi nào co lại mới hiện :));
