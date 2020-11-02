@@ -269,8 +269,14 @@ nav.navbar.navbar-expand-lg.navbar-light .collapse.navbar-collapse .container .n
 footer{
   margin-top: 50px;
 }
+footer .top-footer{
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 0.5em;
+}
 footer div.col-md-4{
-  padding: 50px;
+  padding: 3em;
 }
 footer img{
   width: 100%;
@@ -315,15 +321,27 @@ footer #socialnetwork li{
   border-radius: 50%;
   text-align: center;
   border: 1px solid black;
+  position: relative;
 }
 footer #socialnetwork li i{
-  position: relative;
+  position: absolute;
   top: 50%;
-  transform: translate(0,-50%);
+  left: 50%;
+  transform:scale(1.2) translate(-50%,-50%);
+}
+footer #socialnetwork li:hover{
+	background: blue;
+	color: white;
 }
 footer> h5 {
   background-color: #0870b7;
   text-align: center;
   color: white;
   margin:0;
+}
+footer .bottom-footer{
+	background: var(--orange-primary);
+	color: white;
+	text-align: center;
+	padding: 0.5em;
 }

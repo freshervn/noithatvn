@@ -1,10 +1,10 @@
-main .top-banner {
+main .top-banner .banner {
 	position: relative;
 	padding: 3em;
 	display: flex;
 	flex-direction: row-reverse;
 }
-main .top-banner picture img{
+main .top-banner .banner picture img{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -12,21 +12,21 @@ main .top-banner picture img{
 	height: 100%;
 	z-index: -1;
 }
-main .top-banner .banner-content{
+main .top-banner .banner .banner-content{
 	width: 600px;
 	background-color: rgba(26 ,33 ,86 ,0.7);
 	color: white;
 	padding: 2em;
 }
-main .top-banner .banner-content h3 i{
+main .top-banner .banner .banner-content h3 i{
 	color: var(--line-orange);
 }
-main .top-banner .banner-content p{
+main .top-banner .banner .banner-content p{
 	margin-top: 2.5em;
 	line-height: 2em;
 	font-size: 15px;
 }
-main .top-banner .banner-content button{
+main .top-banner .banner .banner-content button{
 	text-transform: uppercase;
 	padding: 1em 2em;
 	background: var(--line-orange);
@@ -34,7 +34,77 @@ main .top-banner .banner-content button{
 	font-weight: 500;
 	border:none;
 	border-radius: 5px;
+	outline: none;
 }
-main .top-banner .banner-content button:hover{
+main .top-banner .banner .banner-content button:hover{
 	background-color: var(--darkblue-primary);
+}
+main .top-banner .banner .banner-content button:active,main .top-banner .banner .banner-content button:focus{
+	background: var(--line-orange);
+	box-shadow: 1px 1px 1px 1px ,-1px 1px 1px 1px ,1px -1px 1px 1px ,-1px -1px 1px 1px ;
+}
+/*phan cheo*/
+main .top-banner .contact{
+	margin-top: -2em;
+	margin: 0;
+}
+main .top-banner .contact .contact-content {
+	background:  var(--line-orange);
+	padding: 1em 10em 1em 8em;
+	color: white;
+}
+@media only screen and (max-width: 992px){
+	main .top-banner .contact .contact-content {
+		padding: 1em 8em 1em 8em;
+	}
+}
+@media only screen and (max-width: 576px){
+	main .top-banner .contact .contact-content {
+		padding: 1em 1em 1em 5em;
+	}
+}
+main .top-banner .contact .contact-content  picture {
+	padding: 0;
+}
+main .top-banner .contact .contact-content picture img{
+	width: 100%;
+}
+main .top-banner .contact .skew{
+	transform: skew(20deg);
+	background:  var(--line-orange);
+	border-top-right-radius: 5px;
+	margin-left:-10em;
+}
+
+@media only screen and (max-width: 992px){
+	main .top-banner .contact .skew{
+		transform: skew(0deg);
+		padding: 3em;
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 768px){
+	main .top-banner .contact .skew{
+		transform: skew(0deg);
+		padding: 1em 1em 1em 5em;
+		margin: 0;
+	}
+}
+main .top-banner .contact  .skew h6{
+	background: #282828;
+	color: #fbfbf6;
+	padding: 0.5em 1em;
+	margin: auto;
+	margin-right: 0.5em;
+	color: white;
+}
+@media only screen and (max-width: 992px){
+	main .top-banner .contact  .skew h6{
+		transform: skew(20deg);
+		margin: auto;
+		margin-left: 0;
+		margin-right: 0.3em;
+		text-align: left;
+		font-size: 14px;
+	}
 }
