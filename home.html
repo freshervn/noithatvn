@@ -1,198 +1,584 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-	<title>Trang chủ</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="image/u126.png" type="image/x-icon?" />
-	<!-- icon --> 
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-	<!-- boottrap 4-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<!-- bootrap -->
+	<!DOCTYPE html>
+	<html lang="vi">
+	<head>
+		<title>Trang chủ</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="image/u126.png" type="image/x-icon?" />
+		<!-- icon --> 
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
-	<!-- my css -->
-	<link rel="stylesheet" type="text/css" href="css/lib.css">
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+		<!-- boottrap 4-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!-- bootrap -->
 
-</head>
-<body>
-	<header>
-		<div class="contact py-2 ">			
-			<div class="container">
-				<table class="d-none d-sm-block">
-					<tr>
-						<td><img src="image/icons/phone_ring.png"> 0283 813 0590 - 0283 813 0591</td>
-						<td><img src="image/icons/reversible_time.png"> 8h00 - 18h00</td>
-					</tr>
-				</table>
-				<div class="d-sm-none flag">					
-					<img src="image/icons/vn.jpg">
-					<img src="image/icons/usa.jpg">
-				</div>
-			</div>
-		</div>				
+		<!-- owl carousel -->
+		<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 
-		<div class="logo_search d-none d-lg-block">	
-			<div class="container">
-				<a href="#"><img src="image/u126.png"></a>
-			</button>
-			<form class="form-inline my-2 my-lg-0 ml-auto">
-				<input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="image/icons/search.png"></button>
-			</form>
-		</div>
-	</div>
-</header>
+		<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<a class="navbar-brand  d-lg-none  mr-auto" href="#"><img src="image/u126.png"></a>
-	<button class="btn btn-outline-success d-lg-none " type="submit"><img src="image/icons/search.png"></button>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<div class="container">
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Trang chủ<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">giới thiệu</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						sản phẩm
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<div class="continous-dropdown">						
-							<a class="dropdown-item" href="#">tấm lợp sinh thái </a>
-							<div class="dropdown-dropdown-item">
-								<a href="">Tấm Lợp Sinh Thái Onduline</a>
-								<a href="">Tấm Lợp Sinh Thái Onduline</a>
-								<a href="">Tấm Lợp Sinh Thái Onduline</a>
-								<a href="">Tấm Lợp Sinh Thái Onduline</a>
-							</div>
-						</div>
-						<a class="dropdown-item" href="#">ngói siêu nhẹ</a>
-						<a class="dropdown-item" href="#">tấm lợp bitium phủ đá</a>
-						<a class="dropdown-item" href="#">gạck ngói đồng Nai</a>
-						<a class="dropdown-item" href="#">gạch ngói mỹ xuân</a>
-						<div class="continous-dropdown">							
-							<a class="dropdown-item" href="#">gạch ngói hạ long</a>
-							<div class="dropdown-dropdown-item">
-								<a href="">Tấm Lợp Sinh Thái Onduline</a>
-								<a href="">Tấm Lợp Sinh Thái Onduline</a>
-								<a href="">Tấm Lợp Sinh Thái Onduline</a>
-								<a href="">Tấm Lợp Sinh Thái Onduline</a>
-							</div>
-						</div>
-						<a class="dropdown-item" href="#">gạch ốp láp hạ long</a>
+		<!-- my css -->
+		<link rel="stylesheet" type="text/css" href="css/lib.css">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+
+	</head>
+	<body>
+		<header>
+			<div class="contact py-2 ">			
+				<div class="container">
+					<table class="d-none d-sm-block">
+						<tr>
+							<td><img src="image/icons/phone_ring.png"> 0283 813 0590 - 0283 813 0591</td>
+							<td><img src="image/icons/reversible_time.png"> 8h00 - 18h00</td>
+						</tr>
+					</table>
+					<div class="d-sm-none flag">					
+						<img src="image/icons/vn.jpg">
+						<img src="image/icons/usa.jpg">
 					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">tư vấn</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">liên hệ</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
-<main>
-	<article class="top-banner ">
-
-		<div class="banner container-fluid">			
-			<picture>
-				<img src="image/u175.jpg">
-			</picture>
-			<div class="banner-content">
-				<h3>Chào mừng Bạn đến với <i>NoiThat.vn</i></h3>
-				<p>Chúng tôi luôn đi tìm kiếm, Cung cấp Các Giải Pháp Ưu việt và thân thiện với môi trường, tiết kiệm chi phí và thẩm mỹ cho các nhu cầu về mái nhà và sàn nhà.
-				Sản phẩm của chúng tôi đã được công nhận với kỷ chuyên môn về các sản phẩm , cũng nhưng chất lượng, độ bên  và giá cả phù hợp.</p>
-				<button>báo giá ngay</button>
+				</div>
 			</div>				
+
+			<div class="logo_search d-none d-lg-block">	
+				<div class="container">
+					<a href="#"><img src="image/u126.png"></a>
+				</button>
+				<form class="form-inline my-2 my-lg-0 ml-auto">
+					<input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="image/icons/search.png"></button>
+				</form>
+			</div>
 		</div>
+	</header>
 
-		<div class="contact row">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand  d-lg-none  mr-auto" href="#"><img src="image/u126.png"></a>
+		<button class="btn btn-outline-success d-lg-none " type="submit"><img src="image/icons/search.png"></button>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="container">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Trang chủ<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">giới thiệu</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							sản phẩm
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<div class="continous-dropdown">						
+								<a class="dropdown-item" href="#">tấm lợp sinh thái </a>
+								<div class="dropdown-dropdown-item">
+									<a href="">Tấm Lợp Sinh Thái Onduline</a>
+									<a href="">Tấm Lợp Sinh Thái Onduline</a>
+									<a href="">Tấm Lợp Sinh Thái Onduline</a>
+									<a href="">Tấm Lợp Sinh Thái Onduline</a>
+								</div>
+							</div>
+							<a class="dropdown-item" href="#">ngói siêu nhẹ</a>
+							<a class="dropdown-item" href="#">tấm lợp bitium phủ đá</a>
+							<a class="dropdown-item" href="#">gạck ngói đồng Nai</a>
+							<a class="dropdown-item" href="#">gạch ngói mỹ xuân</a>
+							<div class="continous-dropdown">							
+								<a class="dropdown-item" href="#">gạch ngói hạ long</a>
+								<div class="dropdown-dropdown-item">
+									<a href="">Tấm Lợp Sinh Thái Onduline</a>
+									<a href="">Tấm Lợp Sinh Thái Onduline</a>
+									<a href="">Tấm Lợp Sinh Thái Onduline</a>
+									<a href="">Tấm Lợp Sinh Thái Onduline</a>
+								</div>
+							</div>
+							<a class="dropdown-item" href="#">gạch ốp láp hạ long</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">tư vấn</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">liên hệ</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main>
 
-			<div class="col-lg-6  col-md-8 col-sm-12 contact-content">
+		<article class="top-banner ">
 
-				<!-- noi dung ben trong the cam dau tien -->
-				<div class="stand row">	
-					<picture class="col-1">
-						<img src="image/icons/u197.png">										
-					</picture>
-					<div class="col-11 ">
-						<h4>TRAO ĐỔI VÀ LIÊN HỆ</h4>
-						<p>
-							Nếu Bạn có yêu cầu về sản phẩm có thể gặp trực tiếp và trao đổi với chúng tôi.
-						</p>						
+			<div class="banner container-fluid">			
+				<picture>
+					<img src="image/u175.jpg">
+				</picture>
+				<div class="banner-content">
+					<h3>Chào mừng Bạn đến với <i>NoiThat.vn</i></h3>
+					<p>Chúng tôi luôn đi tìm kiếm, Cung cấp Các Giải Pháp Ưu việt và thân thiện với môi trường, tiết kiệm chi phí và thẩm mỹ cho các nhu cầu về mái nhà và sàn nhà.
+					Sản phẩm của chúng tôi đã được công nhận với kỷ chuyên môn về các sản phẩm , cũng nhưng chất lượng, độ bên  và giá cả phù hợp.</p>
+					<button>báo giá ngay</button>
+				</div>				
+			</div>
+
+			<div class="contact row">
+
+				<div class="col-lg-6  col-md-8 col-sm-12 contact-content">
+
+					<!-- noi dung ben trong the cam dau tien -->
+					<div class="stand row">	
+						<picture class="col-1">
+							<img src="image/icons/u197.png">										
+						</picture>
+						<div class="col-11 ">
+							<h4>TRAO ĐỔI VÀ LIÊN HỆ</h4>
+							<p>
+								Nếu Bạn có yêu cầu về sản phẩm có thể gặp trực tiếp và trao đổi với chúng tôi.
+							</p>						
+						</div>
+
 					</div>
-
+					<!-- het contact content -->
 				</div>
-				<!-- het contact content -->
+
+				<div class="col-lg-3  col-md-4 col-sm-12 skew row">
+					<h6>Liên Hệ Chúng Tôi</h6>				
+					<h6>>></h6>
+				</div>
+				<div class="col-lg-3"></div>
+
 			</div>
 
-			<div class="col-lg-3  col-md-4 col-sm-12 skew row">
-				<h6>Liên Hệ Chúng Tôi</h6>				
-				<h6>>></h6>
+		</article>
+
+		<!-- about -->
+		<article class="about">
+			<section class="container">
+				<div class="row left-side-color">
+
+					<aside class="col-md-6 image">
+						<img src="image/u201.jpg">
+					</aside>
+
+					<aside class="col-md-6 content">
+						<h4>VỀ CÔNG TY</h4>
+						<p>eNoiThat.vn mang đến những giải pháp nổi tiếng và thân thiện với môi trường, tiết kiệm chi phí và thẩm mỹ cho các nhu cầu về mái nhà và sàn nhà.</p>
+						<p>Với kinh nghiệm nhiều năm trong việc lựa chọn bán các sản phẩm tốt nhất liên quan đến nghành xây dưng chúng tôi mang đến cho bạn sự hài lòng về các công trình, tòa nhà cao ốc, văn phòng, khách sạn , ngân hàng… với đội ngũ nhân công lành nghề.</p>
+						<div class="row">
+
+							<div class="quality row ">
+								<div class="col-md-3 col-4">
+									<img src="image/u213.png">							
+								</div>						
+								<div class="col-md-9 col-8">
+									<h6>CHẤT LƯỢNG</h6>
+									Sản phẩm do chúng tôi luôn đảm bảo về chất lượng […]
+								</div>
+							</div>
+
+							<div class="quality row ">
+								<div class="col-md-3 col-4">
+									<img src="image/u213.png">							
+								</div>						
+								<div class="col-md-9 col-8">
+									<h6>CHẤT LƯỢNG</h6>
+									Sản phẩm do chúng tôi luôn đảm bảo về chất lượng […]
+								</div>
+							</div>
+
+							<div class="quality row ">
+								<div class="col-md-3 col-4">
+									<img src="image/u213.png">							
+								</div>						
+								<div class="col-md-9 col-8">
+									<h6>CHẤT LƯỢNG</h6>
+									Sản phẩm do chúng tôi luôn đảm bảo về chất lượng […]
+								</div>
+							</div>
+
+							<div class="quality row ">
+								<div class="col-md-3 col-4">
+									<img src="image/u213.png">							
+								</div>						
+								<div class="col-md-9 col-8">
+									<h6>CHẤT LƯỢNG</h6>
+									Sản phẩm do chúng tôi luôn đảm bảo về chất lượng […]
+								</div>
+							</div>
+
+						</div>
+						<!-- figure -->
+						<button class="btn-orange-rectangle">XEM THÊM</button>
+					</aside>
+					<!-- content -->
+				</div>
+			</section>
+
+		</article>
+		<!-- viết cript ngày à luôn -->
+		<script type="text/javascript">
+		//select class image
+		$(document).ready(function(){
+			$('main .about .image').css({"background-image:","linear-gradient(270deg, #c0c0c0 , transparent 50%) , url('../image/u201.jpg')"});
+		});
+
+		// alert("hi");
+	</script>
+
+
+	<!-- product -->
+	<article class="container-fluid products">
+		<!-- danh muc san pham -->
+		<section class="container classification">
+
+			<header>
+				<h3>TẤM LỢP SINH THÁI</h3>
+				<!-- ty làm xong lập khối link -->
+				<ul>
+					<li><a href="">Onduline</a></li>
+					<li><a href="">Corrbit</a></li>
+					<li><a href="">gutta</a></li>
+					<li><a href="">tấm lợp sinh thái châu âu</a></li>
+					<li><a href="">Xem tất cả</a></li>
+				</ul>
+			</header>
+
+			<main class="row">
+
+				<figure class="col-lg-3 col-md-4 col-xm-6 new">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+
+				<figure class="col-lg-3 col-md-4 col-xm-6 sale">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+
+
+				<figure class="col-lg-3 col-md-4 col-xm-6">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+
+				<figure class="col-lg-3 col-md-4 col-xm-6">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+			</main>
+			<button class="btn-blue-fullwidth">XEM TẤT CẢ</button>
+		</section>
+
+		<!-- danh muc 2 -->
+		<section class="container classification">
+			<header>
+				<h3>TẤM LỢP PHỦ ĐÁ</h3>
+				<!-- ty làm xong lập khối link -->
+				<ul>
+					<li><a href="">kiểu vảy cá</a></li>
+					<li><a href="">kiểu xếp lợp</a></li>
+					<li><a href="">kiểu viên gạch</a></li>
+					<li><a href="">kiểu hoa văn</a></li>
+					<li><a href="">kiểu tổ ong</a></li>
+					<li><a href="">kiểu ziczag</a></li>
+					<li><a href="">kiểu vảy rồng</a></li>
+				</ul>
+			</header>
+
+			<main class="row">
+
+				<figure class="col-lg-3 col-md-4 col-xm-6">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+
+				<figure class="col-lg-3 col-md-4 col-xm-6">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+
+				<figure class="col-lg-3 col-md-4 col-xm-6">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+
+			</main>
+
+			<button class="btn-blue-fullwidth">XEM TẤT CẢ</button>
+		</section>
+	</article>
+
+
+	<article class="container-fluid watched-product">
+		<header>
+			<h4> Sản phẩm đã xem </h4>
+		</header>
+		<div class="owl-carousel owl-theme container">			
+
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
 			</div>
-			<div class="col-lg-3"></div>
+
+
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+			</div>
+
+
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+			</div>
+
+
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+			</div>
+
+
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+			</div>
+
+
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+						<button class="btn-orange-rectangle">LIÊN HỆ NGAY</button>
+					</figcaption>
+				</figure>
+			</div>
 
 		</div>
+	</article>
+	<article class="container-fluid our-project">
+		<header>
+			<h4> dự án của chúng tôi </h4>
+			<p>NoiThat.vn đã thực hiện rất nhiều dự án trong nhiều năm đáp ứng cho khách hàng của chúng tôi. Chúng ta hãy xem một số dự án của chúng tôi.</p>
+		</header>
+		<div class="owl-carousel owl-theme container">			
 
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+					</figcaption>
+				</figure>
+			</div>
+
+
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+					</figcaption>
+				</figure>
+			</div>
+
+
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+					</figcaption>
+				</figure>
+			</div>
+
+
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+					</figcaption>
+				</figure>
+			</div>
+
+
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+					</figcaption>
+				</figure>
+			</div>
+
+
+			<div class="item">
+				<figure class="item">
+					<img src="image/u223.jpg">
+					<figcaption>
+						<h3 class="name-product">TẤM LỢP NEWOLINE</h3>
+						<h4 class="price">75,000 VND</h4>
+					</figcaption>
+				</figure>
+			</div>
+
+		</div>
+	</article>
+	 <!-- để mai làm -->
+	<article class="news container-fluid">
+		<main class="container">
+		<h4>Tin Tức</h4>
+		<div class="row">
+		<aside class="content col-md-6"></aside>			
+		<aside class="video col-md-6 "></aside>
+		</main>
 	</article>
 </main>
- <footer>
-	<div class="top-footer">
-		<h6>"chuyên cung cấp, phân phối sỉ , lẻ Vật tư nội thất xây dựng chất lượng cao với giá hợp lý"</h6>
-	</div>
-	<div class="container">
+<footer>
+	<h6 class="topheader">"chuyên cung cấp, phân phối sỉ , lẻ Vật tư nội thất xây dựng chất lượng cao với giá hợp lý"</h6>
+	<div class="container main-footer">
 		<div class="row">
-					<div class="col-md-4 class company">
-						<img src="image/u126.png">
-						<p>Với hơn 10 năm kinh nghiệm và chính thức đi vào hoạt động mang thương hiệu “Nhà Ấm” năm 2009. Công Ty TNHH Thiết kế XD Nội Thất Nhà Ấm đã khẳng định và cho thấy rằng công ty là nơi tập hợp đội ngũ kiến trúc sư, kỹ sư và cán bộ kỹ thuật trẻ tài năng giàu kinh nghiệm, năng động và sáng tạo được đào tạo khá hoàn chỉnh, bài bản về nghiệp vụ chuyên môn.</p>
-						<ul id="socialnetwork">
-							<li><i class="fab fa-facebook-f" ></i></li>
-							<li><i class="  fab fa-tumblr"></i></li>
-							<li><i class="fab fa-linkedin-in"></i></li>
-						</ul>
-					</div>
-					<div class="col-md-4 support">
-						<h5>HỖ TRỢ</h5>
-						<p>Về Chúng Tôi</p>
-						<hr>
-						<p>Quy Định Bảo Hành</p>
-						<hr>
-						<p>Đổi Trả Hàng</p>
-						<hr>
-						<p>Phương Thức Thanh Toán</p>
-						<hr>
-						<p>Điều Khoản Sử Dụng</p>
-						<hr>
-					</ul>
-				</div>
-
-				<div class="col-md-4 contact">
-					<h5>LIÊN HỆ CHÚNG TÔI</h5>
-					<h6><b>Email hỗ trợ</b> : Liên hệ các vấn đề về đặt hàng</h6>
-					<ul>
-						<li>tuvan_truongphat.com</li>
-						<li>chamsockhachhang@truongphat.com</li>
-					</ul>
-					<h6><b>Hotline</b> :  0123 456 789</h6>
-					<h6><b>Thời gian tư vấn</b>:Từ 08h00 đến 12h00 - 13h00 đến 17h00 các ngày trong tuần (Trừ ngày lễ)</h6>
-				</div>
+			<div class="col-md-4 class company">
+				<img src="image/u126.png">
+				<p>Với hơn 10 năm kinh nghiệm và chính thức đi vào hoạt động mang thương hiệu “Nhà Ấm” năm 2009. Công Ty TNHH Thiết kế XD Nội Thất Nhà Ấm đã khẳng định và cho thấy rằng công ty là nơi tập hợp đội ngũ kiến trúc sư, kỹ sư và cán bộ kỹ thuật trẻ tài năng giàu kinh nghiệm, năng động và sáng tạo được đào tạo khá hoàn chỉnh, bài bản về nghiệp vụ chuyên môn.</p>
+				<ul id="socialnetwork">
+					<li><i class="fab fa-facebook-f" ></i></li>
+					<li><i class="  fab fa-tumblr"></i></li>
+					<li><i class="fab fa-linkedin-in"></i></li>
+				</ul>
 			</div>
+			<div class="col-md-4 support">
+				<h5>HỖ TRỢ</h5>
+				<p>Về Chúng Tôi</p>
+				<hr>
+				<p>Quy Định Bảo Hành</p>
+				<hr>
+				<p>Đổi Trả Hàng</p>
+				<hr>
+				<p>Phương Thức Thanh Toán</p>
+				<hr>
+				<p>Điều Khoản Sử Dụng</p>
+				<hr>
+			</ul>
 		</div>
-		<div class="bottom-footer">
-			<h6>© 2020 Noithat.vn. All Rights Reserved.</h6>
+		<div class="col-md-4 contact">
+			<h5>LIÊN HỆ CHÚNG TÔI</h5>
+			<p><img src="image/icons/location.png"><b>Trụ sở:</b> 17 Lê Thạch, P. 12, Q. 4, TP. HCM</p>
+			<p><img src="image/icons/location.png"><b>VPĐD:</b> Số 33, Đường số 2, KDC Hương Lộ 5, P. An Lạc, Q. Bình Tân, TP. HCM</p>
+			<p><img src="image/icons/phone.png">0911511.331 / 0944.70.4466</p>
+			<p><img src="image/icons/messenger.png">tamlopgiatot@gmail.com / enoithatsale@gmail.com</p>			
 		</div>
+	</div>
+</div>
+<h6 class="bottom-footer">© 2020 Noithat.vn. All Rights Reserved.</h6>
 </footer>
+<script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$('.watched-product .owl-carousel').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:5
+			}
+		}
+	})
+	$('.our-project .owl-carousel').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:4
+			}
+		}
+	})
+	
+</script>
 </body>
 </html>

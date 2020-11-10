@@ -45,13 +45,13 @@ main .top-banner .banner .banner-content button:active,main .top-banner .banner 
 }
 /*phan cheo*/
 main .top-banner .contact{
-	margin-top: -2em;
-	margin: 0;
+	margin: -2em 0 0 0;
 }
 main .top-banner .contact .contact-content {
 	background:  var(--line-orange);
 	padding: 1em 10em 1em 8em;
 	color: white;
+	border: 2px solid var(--line-orange);
 }
 @media only screen and (max-width: 992px){
 	main .top-banner .contact .contact-content {
@@ -74,6 +74,7 @@ main .top-banner .contact .skew{
 	background:  var(--line-orange);
 	border-top-right-radius: 5px;
 	margin-left:-10em;
+	border:2px solid var(--line-orange);
 }
 
 @media only screen and (max-width: 992px){
@@ -81,6 +82,7 @@ main .top-banner .contact .skew{
 		transform: skew(0deg);
 		padding: 3em;
 		margin: 0;
+		border-top-right-radius: 0px;
 	}
 }
 @media only screen and (max-width: 768px){
@@ -91,12 +93,24 @@ main .top-banner .contact .skew{
 	}
 }
 main .top-banner .contact  .skew h6{
-	background: #282828;
-	color: #fbfbf6;
+	background: transparent;
 	padding: 0.5em 1em;
 	margin: auto;
 	margin-right: 0.5em;
 	color: white;
+	font-size: 14px;
+	transform: skew(-20deg);
+}
+main .top-banner .contact  .skew h6:after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #282828;
+	z-index: -1;
+	transform: skew(20deg);
 }
 @media only screen and (max-width: 992px){
 	main .top-banner .contact  .skew h6{
@@ -105,6 +119,362 @@ main .top-banner .contact  .skew h6{
 		margin-left: 0;
 		margin-right: 0.3em;
 		text-align: left;
-		font-size: 14px;
+		font-size: 13px;
 	}
+}
+/* about*/
+main .about {
+	background-color: #fbfbf6;
+	margin-top: -8em;
+	padding: 12em 15px 2em;
+}
+main .about aside{
+	padding: 0;
+}
+
+
+main .about .image{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(270deg, #c0c0c0 , transparent 26%), url('../image/u201.jpg');
+	background-size: 100%,100%;
+}
+main .about .image img{
+	opacity: 0.5;
+	z-index: -1;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+}
+/*cho nay dang sua*/
+main .about aside.content{
+	padding: 1em;
+	background: transparent;
+	background: #c0c0c0;
+}
+main .about .content h4{
+	color: var(--lightblue-primary);
+	border-bottom: 2px solid var(--line-orange);
+	width: fit-content;
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+}
+@media only screen and (max-width:786px ){
+	main .about .content h4{
+		margin-top: 1.5em;
+	}
+}
+main .about .content p{
+	font-size: 14px;
+}
+@media only screen and (max-width:786px){
+
+}
+main .about .content .quality{
+	width: 46%;
+	margin: 2%;
+	padding: 2%;
+	border-clip:content-box;
+	border:1px solid #d5d5d5;
+}
+@media only screen and (max-width:992px){
+	main .about .content .quality{
+		width: 46%;
+		margin: 2%;
+		padding: 2% 0%;
+		border-clip:content-box;
+		border:1px solid #d5d5d5;
+	}
+}
+main .about .content .quality div{
+	padding: 0;
+	position: relative;
+}
+main .about .content .quality img{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+
+@media only screen and (max-width:786px){
+	main .about .content .quality >div{
+		font-size: 10px;
+	}
+	main .about .content .quality >div h6{
+		font-size: 12px;
+	}
+}
+main .about button{
+	font-size: 14px;
+}
+
+/*products*/
+/*header*/
+main .products .classification {
+	margin-top: 2em;
+}
+main .products .classification header {
+	background: var(--lightblue-primary);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	
+}
+main .products .classification header >*{
+	margin: 0;
+	padding: 15px;
+	font-size: 16px;
+}
+main .products .classification header ul{
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+@media only screen and (max-width: 992px){
+	main .products .classification header ul{
+		display: none;
+	}
+}
+main .products .classification header ul li{
+	display: inline-block;
+	border-right: 2px solid white;
+	padding: 15px;
+	margin: 0;
+	position: relative;
+	transition: 1s ;
+	/*thẻ a không gắn được transition*/
+}
+main .products .classification header ul li:hover{
+	background-image: radial-gradient(white 50%,var(--lightblue-primary));
+}
+main .products .classification header ul li a{
+	color: white;
+	text-decoration: none;
+	margin: 0;
+}
+main .products .classification header ul li::first-letter{
+	text-transform: uppercase;
+}
+main .products .classification header ul li:hover a{
+	color: var(--lightblue-primary);	
+}
+/*product*/
+main .products .classification main{
+	padding: 1em;
+}
+main .products .classification main figure{
+	position: relative;
+}
+main .products .classification main figure img{
+	width: 100%;
+	border: 1px solid gray;
+}
+main .products .classification main figure figcaption {
+	margin-top: 1em;
+	text-align: center;
+}
+/*h3 la ten san pham*/
+main .products .classification main figure figcaption .name-product {
+	font-size: 16px;
+}
+/*h4 priece*/
+main .products .classification main figure figcaption .price {
+	font-size: 16px;
+	color: var(--line-orange);
+}
+main .products .classification main figure figcaption button{
+}
+main .products .classification main figure.new::after{
+	display: block;
+	content: "";
+	width: 50px;
+	height: 50px;
+	background: transparent url('../image/u166.png') no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -8px;
+	right: 8px;
+}
+main .products .classification main figure.sale::after{
+	/*anh co thể chỉnh vị trí ở chỗ này*/
+	top: -8px;
+	left: 8px;
+	display: block;
+	content: "giảm 20%";
+	color: white;
+	width: 50px;
+	height: 50px;
+	background: red;
+	position: absolute;
+	box-shadow: 2px 2px 2px 2px yellow ,-2px -2px 2px 2px yellow,-2px 2px 2px 2px yellow,2px -2px 2px 2px yellow;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	/* tạo định dạng hình lá cờ*/
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+}
+main .products .classification > button{
+	display: none;
+}
+@media only screen and (max-width: 992px){
+	main .products .classification > button{
+		display: block;
+	}
+}
+.watched-product{
+	background: whitesmoke;
+	padding-top: 1.5em;
+}
+.watched-product header{
+	text-align: center;
+	align-content: center;
+}
+.watched-product header h4{
+	border-bottom: 1px solid var(--line-orange);
+	width: fit-content;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 1.5em;
+}
+/*owl carowlel*/
+
+/*dot*/
+
+/*normal*/
+.owl-carousel.owl-theme .owl-dots .owl-dot span{
+	width: 10px;
+	height: 10px;
+	background: blue;
+	opacity: 0.3;
+}
+/* efect*/
+
+/*hover*/
+.owl-carousel.owl-theme .owl-dots .owl-dot span:hover{
+	background: blue;
+	opacity: 0.8;
+}
+/*active*/
+.owl-carousel.owl-theme .owl-dots .owl-dot.active span{
+	background: blue;
+	opacity: 1;
+} 
+.owl-carousel.owl-theme .owl-dots .owl-dot{
+	outline: none;
+}
+
+/*nav*/
+/*khung*/
+.owl-carousel.owl-theme .owl-nav{
+	display: flex;
+	position: absolute;	
+	width: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	transition: 0.5s ease-in-out;
+}
+/*button*/
+.owl-carousel.owl-theme .owl-nav button {
+	border-radius: 50%;
+	outline: none;
+	transform: rotate(0deg);
+	transition: 0.5s ease-in-out;
+}
+.owl-carousel.owl-theme .owl-nav button.owl-prev{
+	position: absolute;
+	left: calc(-1em);
+}
+.owl-carousel.owl-theme .owl-nav button.owl-next{
+	position: absolute;
+	right: calc(-1em);
+}
+/*span*/
+.owl-carousel.owl-theme .owl-nav button span{
+	text-align: center;
+	font-weight: 700;
+	transform: scale(3.0);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	transition: 0.5s ease-in-out;
+}
+
+/*position*/
+.owl-carousel.owl-theme .owl-nav{
+	top: 35%;
+}
+/*normal*/
+/*nav*/
+.owl-carousel.owl-theme .owl-nav {
+	opacity: 0;
+}
+/*button*/
+.owl-carousel.owl-theme .owl-nav button {
+	width: 50px;
+	height: 50px;
+	background:blue;
+}
+/*span*/
+.owl-carousel.owl-theme .owl-nav button span{
+	color: white;
+	font-size: 20px;
+}
+/*hover*/
+
+/*nav*/
+.owl-carousel.owl-theme:hover .owl-nav{
+	opacity: 1;
+}
+/*button*/
+.owl-carousel.owl-theme .owl-nav button:hover{
+	transform: rotate(360deg);
+	background: red;
+}
+/*span*/
+.owl-carousel.owl-theme .owl-nav button:hover span{
+	color: white;
+}
+/*owl carowlel end*/
+.our-project{
+	background: whitesmoke;
+	padding-top: 1.5em;
+		background: gray;
+		color: white ;
+}
+.our-project header{
+	text-align: center;
+}
+.our-project header h4{
+	padding-bottom: 0.5em;
+	border-bottom: 2px solid var(--line-orange);
+	width: fit-content;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 1.5em;
+}
+.our-project header p{
+	position: relative;
+	width: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.our-project  button{
+	box-shadow: none ;
+}
+/*news*/
+.news {
+	margin: 0 ;
 }

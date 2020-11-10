@@ -14,3 +14,10 @@ thử thách xây ưeb trong 1 tuần :)).
 
 thanh header co so dt, co lai thì biến mất. oke
 lá cờ khi nào co lại mới hiện :));
+
+
+build pick img set back ground;
+1 selection img;
+2 đặt hiệu làm background;
+buil pick màu;
+1 chọn màu

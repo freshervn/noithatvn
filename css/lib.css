@@ -25,6 +25,108 @@
 	/*font*/
 	--font-primary:'Roboto';
 }
+body *{
+	font-size: 14px;
+}
+/*dang fix cho nay*/
+.btn-orange-rectangle{
+	padding: 0.5em 2em;
+	border: none;
+	outline: none;
+	background: var(--orange-primary);
+	border-radius: 5px;
+	color: white;
+	box-shadow: 2px 2px 2px 2px #d5d5d5;
+}
+.btn-orange-rectangle:hover{
+	background: var(--darkblue-primary);
+	box-shadow: 0px 0px 0px 0px;
+}
+.btn-orange-rectangle:active{
+	background: var(--red-primary);
+	box-shadow: 2px 2px 2px 2px #d5d5d5;
+}
+.btn-orange-rectangle:focus{
+	outline: none;
+	box-shadow: 1px 1px 1px 1px #d5d5d5,-1px 1px 1px 1px #d5d5d5,1px -1px 1px 1px #d5d5d5,-1px -1px 1px 1px #d5d5d5;
+}
+.btn-blue-fullwidth{
+	width: 100%;
+	background: var(--lightblue-primary);
+	color: white;
+	padding: 0.5em;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+.btn-blue-fullwidth:hover{
+	background: var(--darkblue-primary);
+	box-shadow: 0px 0px 0px 0px;
+}
+.btn-blue-fullwidth:active{
+	background: var(--red-primary);
+	box-shadow: 2px 2px 2px 2px #d5d5d5;
+}
+.btn-blue-fullwidth:focus{
+	outline: none;
+	box-shadow: 1px 1px 1px 1px #d5d5d5,-1px 1px 1px 1px #d5d5d5,1px -1px 1px 1px #d5d5d5,-1px -1px 1px 1px #d5d5d5;
+}
+/*o sản phẩm*/
+.item {
+	position: relative;
+	text-align: center;
+	line-height: 1.6em;
+}
+.item img{
+	width: 100%;
+	border: 1px solid gray;
+	margin-bottom: 0.5em;
+}
+.itemfigcaption {
+	margin-top: 1em;
+	text-align: center;
+}
+/*h3 la ten san pham*/
+.item figcaption .name-product {
+	font-size: 16px;
+}
+/*h4 priece*/
+.item figcaption .price {
+	font-size: 16px;
+	color: var(--line-orange);
+}
+.item figcaption button{
+}
+.item.new::after{
+	display: block;
+	content: "";
+	width: 50px;
+	height: 50px;
+	background: transparent url('../image/u166.png') no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -8px;
+	right: 8px;
+}
+.item.sale::after{
+	/*anh co thể chỉnh vị trí ở chỗ này*/
+	top: -8px;
+	left: 8px;
+	display: block;
+	content: "giảm 20%";
+	color: white;
+	width: 50px;
+	height: 50px;
+	background: red;
+	position: absolute;
+	box-shadow: 2px 2px 2px 2px yellow ,-2px -2px 2px 2px yellow,-2px 2px 2px 2px yellow,2px -2px 2px 2px yellow;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	/* tạo định dạng hình lá cờ*/
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+}
+/*o san pham*/
 *{
 	box-sizing: border-box;
 }
@@ -269,53 +371,64 @@ nav.navbar.navbar-expand-lg.navbar-light .collapse.navbar-collapse .container .n
 footer{
   margin-top: 50px;
 }
-footer .top-footer{
+footer h6.topheader{
 	background: black;
 	color: white;
 	text-align: center;
 	padding: 0.5em;
 }
-footer div.col-md-4{
-  padding: 3em;
+footer .col-md-4{
+  padding: 2em;
 }
-footer img{
+footer .main-footer {
+	font-size: 14px;
+}
+footer .main-footer img{
   width: 100%;
   margin-bottom: 10px;
 }
-footer p{
+footer .main-footer p{
   margin-top: 10px;
 }
-footer h5{
+footer .main-footer h5{
   margin-bottom: 30px;
 }
 /*xong cot 1*/
-footer .loaidichvu{
+footer .main-footer .loaidichvu{
   padding: 30px
 }
-footer .loaidichvu p{
+footer .main-footer .loaidichvu p{
   padding: 0;
   font-size: 14px;
   margin-top: 15px;
 }
-footer .loaidichvu hr{
+footer .main-footer .loaidichvu hr{
   padding: 0px 0px;
   margin: 2px; 
 }
-footer .hotrokhachhang h6{
-  margin-top:20px;
+/*het cot 1*/
+footer .main-footer h5{
+  margin-top:2.5em;
   margin-bottom: 2px;
 }
-footer ul{
+
+footer .main-footer  .support p{
   margin-top: 0px;
+  margin:0; 
   word-break: break-all;
 }
-footer #socialnetwork{
-  list-style-type: none;  
+footer .main-footer  .support hr{
+	margin-top: 0.5em;
 }
-footer #socialnetwork li{
+/*cot 2*/
+footer .main-footer #socialnetwork{
+  list-style-type: none;  
+  padding: 0px;
+}
+footer .main-footer #socialnetwork li{
   display: inline-block;
   color: #646464;
-  margin-right: 20px;
+  margin-right: 10px;
   width: 35px;
   height:35px;
   border-radius: 50%;
@@ -323,25 +436,26 @@ footer #socialnetwork li{
   border: 1px solid black;
   position: relative;
 }
-footer #socialnetwork li i{
+footer .main-footer #socialnetwork li i{
   position: absolute;
   top: 50%;
   left: 50%;
   transform:scale(1.2) translate(-50%,-50%);
 }
-footer #socialnetwork li:hover{
+footer .main-footer #socialnetwork li:hover{
 	background: blue;
 	color: white;
 }
-footer> h5 {
-  background-color: #0870b7;
-  text-align: center;
-  color: white;
-  margin:0;
+footer .main-footer .contact p img{
+	width: 1em;
+	margin-right: 1em;
 }
 footer .bottom-footer{
 	background: var(--orange-primary);
 	color: white;
 	text-align: center;
 	padding: 0.5em;
+}
+footer h6.bottom-footer{
+	margin: 0.2em;
 }
